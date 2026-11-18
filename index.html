@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Robot Tito UI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="status" style="position:absolute; top:15px; left:15px; color:#00e5ff; font-size:14px; line-height:1.5;">
+    <div id="micStatus">🔴 Micrófono apagado</div>
+    <div id="espStatus">🔴 ESP32 desconectado</div>
+  </div>
+
+  <canvas id="robotCanvas"></canvas>
+
+  <div class="controls">
+    <button id="btnStartEar" style="background: #00ff88;">1. Activar Oído ("Tito")</button>
+    <button id="btnStartCam" style="background: #ffaa00;">2. Activar Cámara</button>
+    <button data-emotion="neutral">Neutral</button>
+    <button data-emotion="happy">Feliz</button>
+    <button data-emotion="angry">Enojado</button>
+    <button data-emotion="surprised">Sorprendido</button>
+  </div>
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>
